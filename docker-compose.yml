@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - VITE_CONVEX_URL=${VITE_CONVEX_URL:-http://127.0.0.1:3210}
+      - VITE_CONVEX_SITE_URL=${VITE_CONVEX_SITE_URL:-http://localhost:3001}
+      - PORT=3001
+      - HOST=0.0.0.0
+      - NODE_ENV=production
+    restart: unless-stopped
