@@ -19,6 +19,7 @@ RUN bun install --frozen-lockfile
 # Copy source files
 COPY apps/web ./apps/web
 COPY packages ./packages
+COPY server.production.ts ./server.production.ts
 
 # Build the application
 RUN bun run build --filter=web
@@ -47,6 +48,9 @@ RUN bun install --frozen-lockfile --production
 # Copy built application from builder
 COPY --from=builder /app/apps/web/dist ./apps/web/dist
 
+# Copy production server
+COPY --from=builder /app/server.production.ts ./server.production.ts
+
 # Change ownership to bun user (already exists in image)
 USER root
 RUN chown -R bun:bun /app
@@ -68,4 +72,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 # Start the application with dumb-init
 ENTRYPOINT ["dumb-init", "--"]
-CMD ["bun", "run", "apps/web/dist/server/server.js"]
+CMD ["bun", "run", "server.production.ts"]
