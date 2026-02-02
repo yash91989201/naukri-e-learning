@@ -46,7 +46,10 @@ Bun.serve({
 			url.pathname.endsWith(".ico") ||
 			url.pathname.endsWith(".png") ||
 			url.pathname.endsWith(".jpg") ||
-			url.pathname.endsWith(".svg")
+			url.pathname.endsWith(".jpeg") ||
+			url.pathname.endsWith(".svg") ||
+			url.pathname.endsWith(".webp") ||
+			url.pathname.endsWith(".gif")
 		) {
 			const staticResponse = await serveStaticFile(request.url);
 			if (staticResponse) {

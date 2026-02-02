@@ -48,6 +48,9 @@ RUN bun install --frozen-lockfile --production
 # Copy built application from builder
 COPY --from=builder /app/apps/web/dist ./apps/web/dist
 
+# Copy public folder assets (favicon, images) to dist/client for static serving
+COPY --from=builder /app/apps/web/public/ ./apps/web/dist/client/
+
 # Copy production server
 COPY --from=builder /app/server.production.ts ./server.production.ts
 
