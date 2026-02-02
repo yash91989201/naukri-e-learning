@@ -80,12 +80,12 @@ const Footer = () => {
 								</Link>
 							</li>
 							<li>
-								<Link
+								<a
 									className="transition-colors hover:text-brand-600"
-									to="/dashboard"
+									href="https://exam.naukrielearning.com"
 								>
 									Student Login
-								</Link>
+								</a>
 							</li>
 						</ul>
 					</div>

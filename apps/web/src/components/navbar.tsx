@@ -93,12 +93,12 @@ const Navbar = () => {
 							/>
 						</div>
 
-						<button
+						<a
 							className="px-4 py-2 font-bold text-gray-600 text-sm transition-colors hover:text-brand-600"
-							type="button"
+							href="https://exam.naukrielearning.com"
 						>
 							Log In
-						</button>
+						</a>
 					</div>
 
 					<div className="flex items-center lg:hidden">
@@ -131,13 +131,13 @@ const Navbar = () => {
 						</div>
 
 						<div className="space-y-3">
-							<button
+							<a
 								className="block w-full rounded-xl border border-gray-200 bg-gray-50 py-3 text-center font-bold text-gray-600 transition-transform active:scale-95"
+								href="https://exam.naukrielearning.com"
 								onClick={() => setIsOpen(false)}
-								type="button"
 							>
 								Log In
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
