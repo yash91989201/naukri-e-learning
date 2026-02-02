@@ -42,12 +42,27 @@ const Footer = () => {
 							Karnataka 560042
 						</p>
 						<p className="mb-2 max-w-sm text-gray-500 text-sm">
-							<strong>Email:</strong>{" "}
+							<strong>Email:</strong>
+							<br />
 							<a
 								className="text-brand-600 hover:underline"
 								href="mailto:sales@naukrielearning.com"
 							>
 								sales@naukrielearning.com
+							</a>
+							<br />
+							<a
+								className="text-brand-600 hover:underline"
+								href="mailto:contact@naukrielearning.com"
+							>
+								contact@naukrielearning.com
+							</a>
+							<br />
+							<a
+								className="text-brand-600 hover:underline"
+								href="mailto:support@naukrielearning.com"
+							>
+								support@naukrielearning.com
 							</a>
 						</p>
 						<p className="mb-6 max-w-sm text-gray-500 text-sm">

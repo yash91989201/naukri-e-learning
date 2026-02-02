@@ -57,7 +57,7 @@ function RouteComponent() {
 					</p>
 					<a
 						className="inline-flex rounded-xl bg-brand-600 px-8 py-3 font-bold text-white transition-colors hover:bg-brand-700"
-						href="mailto:sales@naukrielearning.com"
+						href="mailto:support@naukrielearning.com"
 					>
 						Contact Support
 					</a>

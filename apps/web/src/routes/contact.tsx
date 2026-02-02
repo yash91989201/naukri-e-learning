@@ -205,10 +205,16 @@ function RouteComponent() {
 							</div>
 							<div className="relative z-10 mt-20 border-white/10 border-t pt-10">
 								<p className="mb-2 font-bold text-brand-400 text-xs uppercase tracking-widest">
-									Sales Office
+									Contact Us
+								</p>
+								<p className="mb-2 text-brand-100 text-sm">
+									sales@naukrielearning.com
+								</p>
+								<p className="mb-2 text-brand-100 text-sm">
+									contact@naukrielearning.com
 								</p>
 								<p className="mb-3 text-brand-100 text-sm">
-									sales@naukrielearning.com
+									support@naukrielearning.com
 								</p>
 								<p className="mb-3 text-brand-100 text-sm">
 									<a className="hover:text-white" href="tel:+918062035084">
