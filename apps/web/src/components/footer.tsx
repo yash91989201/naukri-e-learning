@@ -26,9 +26,29 @@ const Footer = () => {
 								</span>
 							</div>
 						</Link>
-						<p className="mb-6 max-w-sm text-gray-500 text-sm leading-relaxed">
+						<p className="mb-4 max-w-sm text-gray-500 text-sm leading-relaxed">
 							Empowering professional growth with industry-recognized
 							certifications and 3D immersive learning pathways since 2024.
+						</p>
+						<p className="mb-2 max-w-sm text-gray-500 text-sm leading-relaxed">
+							<strong>Address:</strong>
+							<br />
+							203, 2ND FLOOR, NORTH BLOCK,
+							<br />
+							MANIPAL CENTER, FRONT WING,
+							<br />
+							Dickenson Rd, Bengaluru,
+							<br />
+							Karnataka 560042
+						</p>
+						<p className="mb-6 max-w-sm text-gray-500 text-sm">
+							<strong>Email:</strong>{" "}
+							<a
+								className="text-brand-600 hover:underline"
+								href="mailto:sales@naukrielearning.com"
+							>
+								sales@naukrielearning.com
+							</a>
 						</p>
 						<div className="flex items-center gap-6">
 							<div className="flex items-center gap-2 font-bold text-gray-400 text-xs">

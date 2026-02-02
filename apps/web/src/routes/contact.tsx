@@ -205,10 +205,19 @@ function RouteComponent() {
 							</div>
 							<div className="relative z-10 mt-20 border-white/10 border-t pt-10">
 								<p className="mb-2 font-bold text-brand-400 text-xs uppercase tracking-widest">
-									Admissions Office
+									Sales Office
 								</p>
-								<p className="text-brand-100 text-sm">
-									admissions@naukrielearning.com
+								<p className="mb-3 text-brand-100 text-sm">
+									sales@naukrielearning.com
+								</p>
+								<p className="text-brand-200 text-xs leading-relaxed">
+									203, 2ND FLOOR, NORTH BLOCK,
+									<br />
+									MANIPAL CENTER, FRONT WING,
+									<br />
+									Dickenson Rd, Bengaluru,
+									<br />
+									Karnataka 560042
 								</p>
 							</div>
 						</div>
