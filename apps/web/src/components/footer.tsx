@@ -8,8 +8,14 @@ const Footer = () => {
 				<div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
 					<div className="lg:col-span-2">
 						<Link className="mb-6 flex items-center gap-3" to="/">
-							<div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-600 shadow-lg">
-								<span className="font-black text-white text-xl">N</span>
+							<div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg bg-brand-600 shadow-lg">
+								<img
+									alt="Naukri E-Learning"
+									className="h-full w-full object-cover"
+									height={512}
+									src="/naukri-e-learning.webp"
+									width={512}
+								/>
 							</div>
 							<div className="flex flex-col">
 								<span className="font-extrabold text-brand-900 text-xl leading-none tracking-tight">

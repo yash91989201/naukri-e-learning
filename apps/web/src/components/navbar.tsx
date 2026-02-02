@@ -41,10 +41,14 @@ const Navbar = () => {
 							to="/"
 						>
 							<div className="preserve-3d relative h-8 w-8 transition-transform duration-300 group-hover:rotate-12 lg:h-10 lg:w-10">
-								<div className="translate-z-10 absolute inset-0 flex transform items-center justify-center rounded-lg bg-brand-600 shadow-lg">
-									<span className="font-black text-lg text-white lg:text-xl">
-										N
-									</span>
+								<div className="translate-z-10 absolute inset-0 flex transform items-center justify-center overflow-hidden rounded-lg bg-brand-600 shadow-lg">
+									<img
+										alt="Naukri E-Learning"
+										className="h-full w-full object-cover"
+										height={512}
+										src="/naukri-e-learning.webp"
+										width={512}
+									/>
 								</div>
 								<div className="absolute inset-0 -z-10 translate-x-1 translate-y-1 transform rounded-lg bg-brand-800" />
 							</div>
