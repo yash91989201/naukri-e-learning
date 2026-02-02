@@ -41,13 +41,22 @@ const Footer = () => {
 							<br />
 							Karnataka 560042
 						</p>
-						<p className="mb-6 max-w-sm text-gray-500 text-sm">
+						<p className="mb-2 max-w-sm text-gray-500 text-sm">
 							<strong>Email:</strong>{" "}
 							<a
 								className="text-brand-600 hover:underline"
 								href="mailto:sales@naukrielearning.com"
 							>
 								sales@naukrielearning.com
+							</a>
+						</p>
+						<p className="mb-6 max-w-sm text-gray-500 text-sm">
+							<strong>Phone:</strong>{" "}
+							<a
+								className="text-brand-600 hover:underline"
+								href="tel:+918062035084"
+							>
+								+91 8062035084
 							</a>
 						</p>
 						<div className="flex items-center gap-6">

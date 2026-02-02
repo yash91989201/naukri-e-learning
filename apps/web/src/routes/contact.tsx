@@ -210,6 +210,11 @@ function RouteComponent() {
 								<p className="mb-3 text-brand-100 text-sm">
 									sales@naukrielearning.com
 								</p>
+								<p className="mb-3 text-brand-100 text-sm">
+									<a className="hover:text-white" href="tel:+918062035084">
+										+91 8062035084
+									</a>
+								</p>
 								<p className="text-brand-200 text-xs leading-relaxed">
 									203, 2ND FLOOR, NORTH BLOCK,
 									<br />
