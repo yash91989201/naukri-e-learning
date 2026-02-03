@@ -33,8 +33,8 @@ function RouteComponent() {
 	const [formData, setFormData] = useState<CertificateForm>({
 		name: "",
 		description: "",
-		duration: "",
-		level: "",
+		duration: "N/A",
+		level: "Intermediate",
 	});
 	const [errors, setErrors] = useState<
 		Partial<Record<keyof CertificateForm, string>>
@@ -42,7 +42,12 @@ function RouteComponent() {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const resetForm = () => {
-		setFormData({ name: "", description: "", duration: "", level: "" });
+		setFormData({
+			name: "",
+			description: "",
+			duration: "N/A",
+			level: "Intermediate",
+		});
 		setErrors({});
 		setEditingId(null);
 		setIsFormOpen(false);
@@ -155,80 +160,25 @@ function RouteComponent() {
 							</h2>
 						</div>
 						<form className="p-6" onSubmit={handleSubmit}>
-							<div className="mb-4 grid gap-4 md:grid-cols-2">
-								<div>
-									<label
-										className="mb-2 block font-medium text-gray-700 text-sm"
-										htmlFor="name"
-									>
-										Certificate Name *
-									</label>
-									<input
-										className="w-full rounded-lg border border-gray-300 px-4 py-2 transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
-										id="name"
-										onChange={(e) =>
-											setFormData((prev) => ({ ...prev, name: e.target.value }))
-										}
-										placeholder="e.g., Advanced Python Programming"
-										type="text"
-										value={formData.name}
-									/>
-									{errors.name && (
-										<p className="mt-1 text-red-600 text-sm">{errors.name}</p>
-									)}
-								</div>
-
-								<div>
-									<label
-										className="mb-2 block font-medium text-gray-700 text-sm"
-										htmlFor="duration"
-									>
-										Duration *
-									</label>
-									<input
-										className="w-full rounded-lg border border-gray-300 px-4 py-2 transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
-										id="duration"
-										onChange={(e) =>
-											setFormData((prev) => ({
-												...prev,
-												duration: e.target.value,
-											}))
-										}
-										placeholder="e.g., 6 months, 3 weeks"
-										type="text"
-										value={formData.duration}
-									/>
-									{errors.duration && (
-										<p className="mt-1 text-red-600 text-sm">
-											{errors.duration}
-										</p>
-									)}
-								</div>
-							</div>
-
 							<div className="mb-4">
 								<label
 									className="mb-2 block font-medium text-gray-700 text-sm"
-									htmlFor="level"
+									htmlFor="name"
 								>
-									Level *
+									Certificate Name *
 								</label>
-								<select
+								<input
 									className="w-full rounded-lg border border-gray-300 px-4 py-2 transition-colors focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
-									id="level"
+									id="name"
 									onChange={(e) =>
-										setFormData((prev) => ({ ...prev, level: e.target.value }))
+										setFormData((prev) => ({ ...prev, name: e.target.value }))
 									}
-									value={formData.level}
-								>
-									<option value="">Select level</option>
-									<option value="Beginner">Beginner</option>
-									<option value="Intermediate">Intermediate</option>
-									<option value="Advanced">Advanced</option>
-									<option value="Expert">Expert</option>
-								</select>
-								{errors.level && (
-									<p className="mt-1 text-red-600 text-sm">{errors.level}</p>
+									placeholder="e.g., Advanced Python Programming"
+									type="text"
+									value={formData.name}
+								/>
+								{errors.name && (
+									<p className="mt-1 text-red-600 text-sm">{errors.name}</p>
 								)}
 							</div>
 
@@ -310,12 +260,6 @@ function RouteComponent() {
 											Description
 										</th>
 										<th className="px-6 py-4 text-left font-semibold text-gray-900 text-sm">
-											Duration
-										</th>
-										<th className="px-6 py-4 text-left font-semibold text-gray-900 text-sm">
-											Level
-										</th>
-										<th className="px-6 py-4 text-left font-semibold text-gray-900 text-sm">
 											Created
 										</th>
 										<th className="px-6 py-4 text-right font-semibold text-gray-900 text-sm">
@@ -336,14 +280,6 @@ function RouteComponent() {
 												<p className="line-clamp-2 text-gray-600 text-sm">
 													{cert.description}
 												</p>
-											</td>
-											<td className="whitespace-nowrap px-6 py-4 text-gray-600 text-sm">
-												{cert.duration}
-											</td>
-											<td className="px-6 py-4">
-												<span className="inline-flex rounded-full bg-brand-100 px-3 py-1 font-medium text-brand-700 text-xs">
-													{cert.level}
-												</span>
 											</td>
 											<td className="whitespace-nowrap px-6 py-4 text-gray-500 text-sm">
 												{formatDate(cert.createdAt)}

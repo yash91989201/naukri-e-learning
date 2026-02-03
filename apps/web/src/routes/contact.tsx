@@ -374,14 +374,6 @@ function RouteComponent() {
 																<div className="mt-1 text-gray-600 text-sm">
 																	{cert.description}
 																</div>
-																<div className="mt-2 flex gap-3 text-xs">
-																	<span className="rounded-full bg-brand-100 px-2 py-1 text-brand-700">
-																		{cert.level}
-																	</span>
-																	<span className="rounded-full bg-gray-200 px-2 py-1 text-gray-700">
-																		{cert.duration}
-																	</span>
-																</div>
 															</div>
 														</label>
 													))
