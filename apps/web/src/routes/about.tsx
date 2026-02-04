@@ -276,6 +276,69 @@ function RouteComponent() {
 						<div className="text-center font-black text-2xl">CISCO</div>
 					</div>
 				</div>
+
+				<div className="mb-32">
+					<h2 className="mb-4 font-bold text-4xl text-gray-900">
+						Board of Directors
+					</h2>
+					<div className="mb-10 h-1.5 w-20 rounded-full bg-brand-600" />
+					<p className="mb-12 max-w-3xl text-gray-600 text-lg leading-relaxed">
+						Our chapter is guided by experienced professionals in finance,
+						technology, and advisory roles who are committed to ensuring
+						organizational excellence and advancing the project management
+						profession.
+					</p>
+					<div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+						<div className="border-brand-600 border-t-4 bg-white p-8 shadow-sm">
+							<h3 className="mb-2 font-bold text-2xl text-gray-900">Rajaram</h3>
+							<p className="mb-4 font-bold text-brand-600 text-xs uppercase tracking-wider">
+								Account Manager
+							</p>
+							<p className="text-gray-600 leading-relaxed">
+								Rajaram oversees the financial operations and ensures fiscal
+								responsibility for the chapter&apos;s initiatives and programs.
+							</p>
+						</div>
+						<div className="border-brand-600 border-t-4 bg-white p-8 shadow-sm">
+							<h3 className="mb-2 font-bold text-2xl text-gray-900">
+								Ramprasad
+							</h3>
+							<p className="mb-4 font-bold text-brand-600 text-xs uppercase tracking-wider">
+								Chief Counselor
+							</p>
+							<p className="text-gray-600 leading-relaxed">
+								Ramprasad provides strategic guidance and advisory support to
+								ensure alignment with Naukri E-Learning standards and chapter
+								objectives.
+							</p>
+						</div>
+						<div className="border-brand-600 border-t-4 bg-white p-8 shadow-sm">
+							<h3 className="mb-2 font-bold text-2xl text-gray-900">
+								Prat Willson
+							</h3>
+							<p className="mb-4 font-bold text-brand-600 text-xs uppercase tracking-wider">
+								Chief Technology Officer
+							</p>
+							<p className="text-gray-600 leading-relaxed">
+								Prat leads the technological infrastructure and digital
+								initiatives to enhance member engagement and operational
+								efficiency.
+							</p>
+						</div>
+						<div className="border-brand-600 border-t-4 bg-white p-8 shadow-sm">
+							<h3 className="mb-2 font-bold text-2xl text-gray-900">
+								Akhilesh
+							</h3>
+							<p className="mb-4 font-bold text-brand-600 text-xs uppercase tracking-wider">
+								Financial Chief Officer
+							</p>
+							<p className="text-gray-600 leading-relaxed">
+								Akhilesh manages financial accounts, budgeting, and reporting to
+								maintain transparent and efficient financial operations.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div className="bg-brand-50 py-24">
