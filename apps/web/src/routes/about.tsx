@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
 	Award,
 	BookOpen,
+	Building2,
+	CheckCircle2,
 	Globe,
 	GraduationCap,
 	Heart,
@@ -274,6 +276,70 @@ function RouteComponent() {
 						<div className="text-center font-black text-2xl">ASQ</div>
 						<div className="text-center font-black text-2xl">OSHA</div>
 						<div className="text-center font-black text-2xl">CISCO</div>
+					</div>
+				</div>
+
+				<div className="mb-32">
+					<div className="grid grid-cols-1 items-center gap-12 rounded-[3rem] bg-[#F0F6FF] p-12 lg:grid-cols-2 lg:p-16">
+						<div className="space-y-6">
+							<div className="inline-flex items-center gap-2 rounded-full bg-[#0056D2] px-4 py-2">
+								<Building2 className="text-white" size={18} />
+								<span className="font-bold text-sm text-white uppercase tracking-wider">
+									Finance Branch Verification
+								</span>
+							</div>
+							<h2 className="max-w-xl font-bold text-4xl text-gray-900 leading-tight md:text-5xl">
+								Corporate Financial
+								<br />
+								<span className="text-[#0056D2]">Trust & Transparency</span>
+							</h2>
+							<p className="max-w-lg text-gray-600 text-lg leading-relaxed">
+								At NaukriElearning, we maintain strictly verified financial
+								channels for all enterprise transactions through our official
+								partner, ensuring the highest standards of accountability.
+							</p>
+							<div className="flex items-center gap-2 text-green-600">
+								<CheckCircle2 className="text-green-600" size={20} />
+								<span className="font-semibold">
+									Verified Corporate Branch Profile
+								</span>
+							</div>
+						</div>
+						<div className="rounded-3xl bg-white p-8 shadow-lg">
+							<div className="flex flex-col gap-6 md:flex-row md:items-center">
+								<div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[#F0F6FF]">
+									<Building2 className="text-[#0056D2]" size={36} />
+								</div>
+								<div className="space-y-4">
+									<div>
+										<p className="mb-1 font-bold text-gray-400 text-xs uppercase tracking-wider">
+											Company Name
+										</p>
+										<p className="font-bold text-gray-900 text-lg">
+											AVINYA INFOTECH
+										</p>
+									</div>
+									<div>
+										<p className="mb-1 font-bold text-gray-400 text-xs uppercase tracking-wider">
+											Bank Name
+										</p>
+										<p className="font-bold text-gray-900 text-lg">
+											State Bank of India (SBI)
+										</p>
+									</div>
+									<div>
+										<p className="mb-1 font-bold text-gray-400 text-xs uppercase tracking-wider">
+											Branch Address
+										</p>
+										<p className="font-bold text-gray-700 leading-relaxed">
+											452 G T Road, Chhehratta Tehsil, Amritsar District,
+											<br />
+											Punjab - 143105, India
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
